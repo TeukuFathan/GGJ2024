@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Test Joue.sln"
+    "dotnet.defaultSolution": "GGJ2024.sln"
 }
