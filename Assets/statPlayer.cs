@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class statPlayer : MonoBehaviour
 {
-    public int barreRire;
+    public float barreRire;
     public bool isDead;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class statPlayer : MonoBehaviour
         }
     }
 
-    public void healPlayer(int heal){
+    public void healPlayer(float heal){
 
         if( (barreRire-heal)<0 ){
 
@@ -38,7 +38,7 @@ public class statPlayer : MonoBehaviour
 
     }
 
-    public void hitPlayer(int hit){
+    public void hitPlayer(float hit){
 
         if( (barreRire+hit)>100 ){
 
@@ -50,6 +50,12 @@ public class statPlayer : MonoBehaviour
             barreRire = barreRire + hit;
 
         }
+
+    }
+
+    public float getBarreRire(){
+
+            return barreRire;
 
     }
 
