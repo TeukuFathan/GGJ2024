@@ -72,12 +72,14 @@
     <Compile Include="Assets\Enemy Galore 1 - Pixel Art\Script\EnemyTest.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_LootSack.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Forgotten Plains\Scripts\PropVariants\FP_GrassLong.cs" />
+    <Compile Include="Assets\nezRougeScript.cs" />
     <Compile Include="Assets\KrishnaPalacio\MinifantasyCommon\Scripts\AnimatedObjectsGroup.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\DUN_AnimatedCharacterSelection.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Chair.cs" />
     <Compile Include="Assets\statPlayer.cs" />
     <Compile Include="Assets\CameraScript.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\DUN_StaggerAnimation.cs" />
+    <Compile Include="Assets\scriptMask.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Forgotten Plains\Scripts\PropVariants\FP_Tree.cs" />
     <Compile Include="Assets\spellPlayer.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Table.cs" />
