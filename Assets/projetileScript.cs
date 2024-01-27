@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class projetileScript : MonoBehaviour
 {   
-
-    public float Velocity = 4;
+    public float speed = 1.3f;
+    public float Velocity = 2;
     public Rigidbody2D rigidBody2D;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class projetileScript : MonoBehaviour
 
         if(isVole && Velocity >= 0){
             Velocity -= 2*Time.deltaTime;
-            transform.position = new Vector2(transform.position.x + Velocity*Time.deltaTime,transform.position.y - acDePesanteur);
+            transform.position = new Vector2(transform.position.x + speed*(Velocity*Time.deltaTime),transform.position.y - acDePesanteur);
         } else {
             rigidBody2D.velocity = Vector2.zero;
         }
