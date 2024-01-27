@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class scriptMask : MonoBehaviour
 {
 
-    CapsuleCollider2D capsuleMask;
+
+    public CapsuleCollider2D capsuleMask;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +27,7 @@ public class scriptMask : MonoBehaviour
         return this.capsuleMask;
 
     }
+
+   
 
 }

@@ -115,6 +115,7 @@ public class PlayerController : MonoBehaviour
        Vector2 delta = inputMovement*velocity*Time.deltaTime;
        Vector2 newPosition = playerBody.position + delta;
        playerBody.MovePosition(newPosition);
+       
     }
 
 }

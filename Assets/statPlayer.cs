@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,12 +11,16 @@ public class statPlayer : MonoBehaviour
     public bool isDead;
     public CapsuleCollider2D playerCapsule;
     public scriptMask maskItem;
+    public GameObject mask;
+
+    public Boolean isMaskDestroyed;
 
     public int[] items = new int[5];
 
     // Start is called before the first frame update
     void Start()
     {
+
         barreRire = 0;
         isDead = false;
         items[0] = 0;
@@ -22,6 +28,7 @@ public class statPlayer : MonoBehaviour
         items[2] = 0;
         items[3] = 0;
         items[4] = 0;
+
     }
 
     void Update()
@@ -32,10 +39,15 @@ public class statPlayer : MonoBehaviour
 
         }
 
-        if(this.maskItem.GetCapsuleMask().IsTouching(this.playerCapsule)){
+        if(mask != null){
 
-            items[0] = 1;
+            if(maskItem.GetCapsuleMask().IsTouching(this.playerCapsule)){
 
+                items[0] = 1;
+                Destroy(mask);
+                mask = null;
+
+            }
         }
     }
 
