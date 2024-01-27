@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 velocity;
     private Vector2 inputMovement;
     private Boolean isJumping;
+    private Vector2 target;
     public Animator animator;
+    private Boolean isSpell1;
+    private Boolean isSpell2;
+    private Boolean isSpell3;
+    private Boolean isSpell4;
 
-    public void Move(InputAction.CallbackContext ctx){
-
-        inputMovement = ctx.ReadValue<Vector2>();
-
-    }
 
     public void Jump(InputAction.CallbackContext ctx){
 
@@ -27,6 +27,58 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
 
         }
+
+    }
+
+    public void upSpell1(InputAction.CallbackContext ctx){
+
+        if(ctx.started){
+
+            isSpell1 = true;
+
+        }
+
+    }
+
+    public void upSpell2(InputAction.CallbackContext ctx){
+
+        if(ctx.started){
+
+            isSpell2 = true;
+
+        }
+
+    }
+
+    public void upSpell3(InputAction.CallbackContext ctx){
+
+        if(ctx.started){
+
+            isSpell3 = true;
+
+        }
+
+    }
+
+    public void upSpell4(InputAction.CallbackContext ctx){
+
+        if(ctx.started){
+
+            isSpell4 = true;
+
+        }
+
+    }
+
+    public void Target(InputAction.CallbackContext ctx){
+
+        target = ctx.ReadValue<Vector2>();
+
+    }
+
+    public void Move(InputAction.CallbackContext ctx){
+
+        inputMovement = ctx.ReadValue<Vector2>();
 
     }
  
