@@ -2834,7 +2834,16 @@ MonoBehaviour:
   barreRire: 0
   isDead: 0
   playerCapsule: {fileID: 604402818}
-  maskItem: {fileID: 63474382}
+  maskScript: {fileID: 63474382}
+  nezRougeScript: {fileID: 1748074746}
+  monoCycleScript: {fileID: 1923521667}
+  chocolatineScript: {fileID: 1806808370}
+  chocolatineScript2: {fileID: 1346195833}
+  mask: {fileID: 63474377}
+  chocolatine: {fileID: 1806808364}
+  chocolatine2: {fileID: 1346195827}
+  monoCycle: {fileID: 1923521662}
+  nezRouge: {fileID: 1748074740}
   items: 0000000000000000000000000000000000000000
 --- !u!70 &604402818 stripped
 CapsuleCollider2D:
@@ -36584,7 +36593,16 @@ MonoBehaviour:
   barreRire: 0
   isDead: 0
   playerCapsule: {fileID: 0}
-  maskItem: {fileID: 0}
+  maskScript: {fileID: 0}
+  nezRougeScript: {fileID: 0}
+  monoCycleScript: {fileID: 0}
+  chocolatineScript: {fileID: 0}
+  chocolatineScript2: {fileID: 0}
+  mask: {fileID: 0}
+  chocolatine: {fileID: 0}
+  chocolatine2: {fileID: 0}
+  monoCycle: {fileID: 0}
+  nezRouge: {fileID: 0}
   items: 0000000000000000000000000000000000000000
 --- !u!1 &1305819882
 GameObject:
@@ -36923,8 +36941,8 @@ GameObject:
   - component: {fileID: 1346195832}
   - component: {fileID: 1346195831}
   - component: {fileID: 1346195830}
-  - component: {fileID: 1346195829}
   - component: {fileID: 1346195828}
+  - component: {fileID: 1346195833}
   m_Layer: 0
   m_Name: Chocolatine2
   m_TagString: Untagged
@@ -36953,19 +36971,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1346195829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346195827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a193697eb24d0784ab47cec7d6c7e3ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  capsuleMask: {fileID: 0}
 --- !u!70 &1346195830
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -37068,6 +37073,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346195833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346195827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dcbafd06fa9264bb94cba728c939a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsuleChocolatine: {fileID: 1346195830}
 --- !u!1 &1372580321
 GameObject:
   m_ObjectHideFlags: 0
@@ -86897,6 +86915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473b2d4df05dc8742ac1884a47fe1024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capsuleNez: {fileID: 1748074742}
 --- !u!1 &1782463337
 GameObject:
   m_ObjectHideFlags: 0
@@ -87160,8 +87179,8 @@ GameObject:
   - component: {fileID: 1806808369}
   - component: {fileID: 1806808368}
   - component: {fileID: 1806808367}
-  - component: {fileID: 1806808366}
   - component: {fileID: 1806808365}
+  - component: {fileID: 1806808370}
   m_Layer: 0
   m_Name: Chocolatine
   m_TagString: Untagged
@@ -87190,19 +87209,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1806808366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806808364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a193697eb24d0784ab47cec7d6c7e3ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  capsuleMask: {fileID: 0}
 --- !u!70 &1806808367
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -87305,6 +87311,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806808370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806808364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dcbafd06fa9264bb94cba728c939a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsuleChocolatine: {fileID: 1806808367}
 --- !u!1 &1842813434
 GameObject:
   m_ObjectHideFlags: 0
@@ -87717,6 +87736,7 @@ GameObject:
   - component: {fileID: 1923521665}
   - component: {fileID: 1923521664}
   - component: {fileID: 1923521663}
+  - component: {fileID: 1923521667}
   m_Layer: 0
   m_Name: monoCycle
   m_TagString: Untagged
@@ -87778,7 +87798,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -2.3}
-  m_Size: {x: 13.03, y: 24.55}
+  m_Size: {x: 13.03, y: 19.83}
   m_Direction: 0
 --- !u!212 &1923521665
 SpriteRenderer:
@@ -87847,6 +87867,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1923521667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923521662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26e36759acca7e449102db8b02088db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsuleMonoCycle: {fileID: 1923521664}
 --- !u!1 &1946149546
 GameObject:
   m_ObjectHideFlags: 0
@@ -89595,7 +89628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786203226576936002, guid: b37cf9b3843b7324988ca7165fcf34de, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8328370079864867048, guid: b37cf9b3843b7324988ca7165fcf34de, type: 3}
       propertyPath: m_Name

@@ -10,10 +10,17 @@ public class statPlayer : MonoBehaviour
     public float barreRire;
     public bool isDead;
     public CapsuleCollider2D playerCapsule;
-    public scriptMask maskItem;
+    public scriptMask maskScript;
+    public nezRougeScript nezRougeScript;
+    public monoCycleScript monoCycleScript;
+    public ChocolatineScript chocolatineScript;
+    public ChocolatineScript chocolatineScript2;
     public GameObject mask;
+    public GameObject chocolatine;
+    public GameObject chocolatine2;
+    public GameObject monoCycle;
+    public GameObject nezRouge;
 
-    public Boolean isMaskDestroyed;
 
     public int[] items = new int[5];
 
@@ -41,11 +48,55 @@ public class statPlayer : MonoBehaviour
 
         if(mask != null){
 
-            if(maskItem.GetCapsuleMask().IsTouching(this.playerCapsule)){
+            if(maskScript.GetCapsuleMask().IsTouching(this.playerCapsule)){
 
                 items[0] = 1;
                 Destroy(mask);
                 mask = null;
+
+            }
+        }
+
+        if(nezRouge != null){
+
+            if(nezRougeScript.GetCapsuleNezRouge().IsTouching(this.playerCapsule)){
+
+                items[1] = 1;
+                Destroy(nezRouge);
+                nezRouge = null;
+
+            }
+        }
+
+        if(monoCycle != null){
+
+            if(monoCycleScript.GetCapsuleMonoCycle().IsTouching(this.playerCapsule)){
+
+                items[2] = 1;
+                Destroy(monoCycle);
+                monoCycle = null;
+
+            }
+        }
+
+        if(chocolatine != null){
+
+            if(chocolatineScript.GetCapsuleChocolatine().IsTouching(this.playerCapsule)){
+
+                items[3] = 1;
+                Destroy(chocolatine);
+                chocolatine = null;
+
+            }
+        }
+
+        if(chocolatine2 != null){
+
+            if(chocolatineScript2.GetCapsuleChocolatine().IsTouching(this.playerCapsule)){
+
+                items[4] = 1;
+                Destroy(chocolatine2);
+                chocolatine2 = null;
 
             }
         }

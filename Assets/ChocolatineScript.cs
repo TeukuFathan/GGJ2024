@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class nezRougeScript : MonoBehaviour
+public class ChocolatineScript : MonoBehaviour
 {
-    public CapsuleCollider2D capsuleNez;
+
+    public CapsuleCollider2D capsuleChocolatine;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,9 @@ public class nezRougeScript : MonoBehaviour
         
     }
 
-    public CapsuleCollider2D GetCapsuleNezRouge(){
+    public CapsuleCollider2D GetCapsuleChocolatine(){
 
-        return this.capsuleNez;
+        return this.capsuleChocolatine;
 
     }
 }
