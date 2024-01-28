@@ -23,6 +23,7 @@ public class statPlayer : MonoBehaviour
 
 
     public int[] items = new int[5];
+    
 
     // Start is called before the first frame update
     void Start()
