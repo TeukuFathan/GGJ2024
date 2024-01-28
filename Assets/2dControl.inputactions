@@ -205,21 +205,10 @@
                 {
                     "name": "",
                     "id": "2d1f057e-45f1-4157-b595-360c6c72e152",
-                    "path": "<SwitchProControllerHID>/leftShoulder",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "ManetteSwitch",
-                    "action": "Spell1",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "84d1a30c-5bd4-44fc-9bb0-8c855ccdb943",
-                    "path": "<SwitchProControllerHID>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "ManetteSwitch2",
                     "action": "Spell1",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -227,21 +216,10 @@
                 {
                     "name": "",
                     "id": "b40170c6-6ee0-4449-9644-5014ecc31656",
-                    "path": "<SwitchProControllerHID>/rightShoulder",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "ManetteSwitch",
-                    "action": "Spell2",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5e10280c-7cc4-459a-92ba-74bd0e9451ee",
-                    "path": "<SwitchProControllerHID>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "ManetteSwitch2",
                     "action": "Spell2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -249,43 +227,21 @@
                 {
                     "name": "",
                     "id": "b3df7c6e-704f-4c54-a431-e9c182eeae82",
-                    "path": "<SwitchProControllerHID>/leftTrigger",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "ManetteSwitch",
                     "action": "Spell3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "75fd4de3-ee95-401d-9951-d7fd3f2b7178",
-                    "path": "<SwitchProControllerHID>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "ManetteSwitch2",
-                    "action": "Spell3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ac21d28f-7084-4a03-98b3-9ea7942b62dd",
-                    "path": "<SwitchProControllerHID>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "ManetteSwitch",
-                    "action": "Spell4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "f1162ea5-afef-410c-b9ad-4cf029a742c2",
-                    "path": "<SwitchProControllerHID>/rightTrigger",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "ManetteSwitch2",
+                    "groups": "ManetteSwitch",
                     "action": "Spell4",
                     "isComposite": false,
                     "isPartOfComposite": false

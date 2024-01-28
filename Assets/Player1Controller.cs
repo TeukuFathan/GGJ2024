@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Player1Controller : MonoBehaviour
@@ -101,23 +102,42 @@ public class Player1Controller : MonoBehaviour
             inputMovement[0],
             inputMovement[1]
         );
+        
         if(isJumping){
-
-            animator.SetBool("Attack",true);
+            print("test");
+            //animator.SetBool("Attack",true);
             isJumping = false;
 
         }
         else{
-            animator.SetBool("Attack",false);
+            //animator.SetBool("Attack",false);
         }
-        if(isSpell1 == true){
-            scriptBlague.respawn(true,playerBody.position,target);
-            scriptBlague.moveBlague(target);
-            isSpell1 = false;
+        if(isSpell1 == true){ 
+
+            Debug.Log("east");
+            isSpell1=false;
+            scriptBlague.MoveInDirection(1);
+        }
+        if(isSpell2 == true){ 
+            Debug.Log("down");
+            isSpell2=false;
+            scriptBlague.MoveInDirection(2);
+            
+        }
+        if(isSpell3 == true){ 
+            Debug.Log("LEFT");
+            isSpell3=false;
+            scriptBlague.MoveInDirection(3);
+
+        }
+        if(isSpell4 == true){ 
+            Debug.Log("haut");
+            isSpell4=false;
+            scriptBlague.MoveInDirection(4);
 
         }
 
-        //lanceBlague();
+
     }
 
     private void FixedUpdate()
@@ -127,13 +147,5 @@ public class Player1Controller : MonoBehaviour
        playerBody.MovePosition(newPosition);
     }
 
-    public void lanceBlague(){
-        print(transform.position.x + ":"+transform.position.y);
-
-        Vector3 xyz = new Vector3(0, 45, 0);
-        Quaternion newRotation = Quaternion.Euler(xyz);
-        Vector2 pos = new Vector2(transform.position.x - 2,transform.position.y);
-        // Prends le rotation et le position de le rouge 
-        
-    }
+    
 }

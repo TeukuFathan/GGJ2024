@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 public class BlagueScript : MonoBehaviour
@@ -15,6 +12,9 @@ public class BlagueScript : MonoBehaviour
     public GameObject blague;
     private float spawnRate = 2;
     private float timer = 0;
+
+    public Vector3 newPosition;
+    
 
 
     public void TireBlague(Vector2 target){
@@ -34,20 +34,45 @@ public class BlagueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-       // transform.position = transform.position + ( * speed) * Time.deltaTime;
-
+        
+        transform.position = transform.position + (Vector3.right * speed) * Time.deltaTime;
+        print(transform.position);   
+        
     }
 
     public void moveBlague(Vector2 target){
 
         Vector3 targetJ = new Vector3(target[0],target[1],0);
 
-        transform.position = transform.position + ( targetJ * speed) * Time.deltaTime;
-
+       
     }
 
-    public void respawn(bool spawn,Vector2 translate,Vector2 targettt){
+    public Vector3 MoveInDirection(int directions)
+    {
+        newPosition = transform.position;
+
+        if (directions == 1)
+        {
+            newPosition = Vector3.right * speed * Time.deltaTime;
+        }
+        else if (directions == 2)
+        {
+            newPosition = Vector3.left * speed * Time.deltaTime;
+        }
+        else if (directions == 3)
+        {
+            newPosition = Vector3.up * speed * Time.deltaTime;
+        }
+        else if (directions == 4)
+        {
+            newPosition = Vector3.down * speed * Time.deltaTime;
+        }
+
+        return newPosition;
+    }
+
+
+    public void respawn(Vector2 translate,Vector2 targettt){
         
         double angle = Math.Cos(targettt[0]);
         float valeurFloat = (float)angle;
