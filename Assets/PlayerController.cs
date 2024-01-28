@@ -101,12 +101,12 @@ public class PlayerController : MonoBehaviour
         );
         if(isJumping){
 
-            animator.SetBool("Attack",true);
+           // animator.SetBool("Attack",true);
             isJumping = false;
 
         }
         else{
-            animator.SetBool("Attack",false);
+           // animator.SetBool("Attack",false);
         }
     }
 

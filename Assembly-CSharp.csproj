@@ -70,6 +70,7 @@
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Statue.cs" />
     <Compile Include="Assets\FaceScript.cs" />
+    <Compile Include="Assets\imgMasque.cs" />
     <Compile Include="Assets\scrip.cs" />
     <Compile Include="Assets\ChocolatineScript.cs" />
     <Compile Include="Assets\monoCycleScript.cs" />

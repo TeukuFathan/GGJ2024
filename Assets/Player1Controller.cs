@@ -107,7 +107,7 @@ public class Player1Controller : MonoBehaviour
 
         }
         else{
-            animator.SetBool("Attack",false);
+           // animator.SetBool("Attack",false);
         }
     }
 
