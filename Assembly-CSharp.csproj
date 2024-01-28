@@ -76,7 +76,9 @@
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Forgotten Plains\Scripts\PropVariants\FP_GrassLong.cs" />
     <Compile Include="Assets\nezRougeScript.cs" />
     <Compile Include="Assets\KrishnaPalacio\MinifantasyCommon\Scripts\AnimatedObjectsGroup.cs" />
+    <Compile Include="Assets\StatPlayer2.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\DUN_AnimatedCharacterSelection.cs" />
+    <Compile Include="Assets\Player1Controller.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Chair.cs" />
     <Compile Include="Assets\statPlayer.cs" />
     <Compile Include="Assets\CameraScript.cs" />
