@@ -7,18 +7,19 @@ using UnityEngine.InputSystem;
 
 public class Player1Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
     public int speed = 10;
     private Rigidbody2D playerBody;
-    private Vector2 velocity;
+    public Vector2 velocity;
     public Vector2 inputMovement;
-    private bool isJumping;
+    public bool isJumping;
     public Vector2 target;
     public Animator animator;
-    private bool isSpell1;
-    private bool isSpell2;
-    private bool isSpell3;
-    private bool isSpell4;
+    public bool isSpell1;
+    public bool isSpell2;
+    public bool isSpell3;
+    public bool isSpell4;
+    public BlagueScript scriptBlague;
+
 
     public void Jump(InputAction.CallbackContext ctx){
 
@@ -107,8 +108,16 @@ public class Player1Controller : MonoBehaviour
 
         }
         else{
-           // animator.SetBool("Attack",false);
+            animator.SetBool("Attack",false);
         }
+        if(isSpell1 == true){
+            scriptBlague.respawn(true,playerBody.position,target);
+            scriptBlague.moveBlague(target);
+            isSpell1 = false;
+
+        }
+
+        //lanceBlague();
     }
 
     private void FixedUpdate()
@@ -118,4 +127,13 @@ public class Player1Controller : MonoBehaviour
        playerBody.MovePosition(newPosition);
     }
 
+    public void lanceBlague(){
+        print(transform.position.x + ":"+transform.position.y);
+
+        Vector3 xyz = new Vector3(0, 45, 0);
+        Quaternion newRotation = Quaternion.Euler(xyz);
+        Vector2 pos = new Vector2(transform.position.x - 2,transform.position.y);
+        // Prends le rotation et le position de le rouge 
+        
+    }
 }

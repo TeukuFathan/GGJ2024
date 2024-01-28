@@ -85,10 +85,12 @@
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Chair.cs" />
     <Compile Include="Assets\statPlayer.cs" />
     <Compile Include="Assets\CameraScript.cs" />
+    <Compile Include="Assets\arm.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\DUN_StaggerAnimation.cs" />
     <Compile Include="Assets\scriptMask.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Forgotten Plains\Scripts\PropVariants\FP_Tree.cs" />
     <Compile Include="Assets\spellPlayer.cs" />
+    <Compile Include="Assets\scriptBlague.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Table.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Dungeon\Scripts\Prop Variants\DUN_Banner.cs" />
     <Compile Include="Assets\KrishnaPalacio\MINIFANTASY - Forgotten Plains\Scripts\PropVariants\FP_Pillar.cs" />

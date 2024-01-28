@@ -15,11 +15,14 @@ public class statPlayer : MonoBehaviour
     public monoCycleScript monoCycleScript;
     public ChocolatineScript chocolatineScript;
     public ChocolatineScript chocolatineScript2;
+
+    public scriptBlague blagueScript;
     public GameObject mask;
     public GameObject chocolatine;
     public GameObject chocolatine2;
     public GameObject monoCycle;
     public GameObject nezRouge;
+   
 
 
     public int[] items = new int[5];
@@ -101,6 +104,10 @@ public class statPlayer : MonoBehaviour
 
             }
         }
+    }
+
+    public void touchedBlague(){
+        
     }
 
     public void healPlayer(float heal){
